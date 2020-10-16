@@ -3,15 +3,27 @@
 * {		
 	font-family: "Montserrat", sans-serif;
 }
+/* F39B53 */
+:root {
+	--box-bgcolor: #F39B53;
+	--bgcolor: #EFD595;
+	--darkcolor: #353531;
+	--hovercolor: #E76A4B;
+	--textcolor: #fff;
+}
 
 body {
-	background: #24252a;
+	background: var(--bgcolor);
 	padding: 0px;
 	margin: 0px;
 }
 
+nav ul li a {
+	color: var(--darkcolor);
+}
+
 li, a, button {	
-	color: #edf0f1;
+	color: var(--textcolor);
 	text-decoration: none;	
 	font-weight: 500;
 	font-size: 16px;
@@ -42,13 +54,12 @@ header {
 }
 
 .nav__links li a:hover {
-	color: #af2d13;
-			
+	color: var(--hovercolor);
 }
 
 button {
 	padding: 9px 22px;
-	background: rgba(175,45,19,1);
+	background: var(--box-bgcolor);
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
@@ -56,7 +67,7 @@ button {
 }
 
 button:hover {
-	background: rgb(207, 53, 22);
+	background: var(--hovercolor);
 }
 
 .wrapper {
@@ -69,10 +80,10 @@ button:hover {
 }
 
 .productos-destacados {
-	max-width: 1400px;
+	max-width: 100%;
 	margin: 40px auto;
 	padding: 5px;	
-	color: #edf0f1;
+	color: var(--darkcolor);
 	text-align: center;
 	box-sizing: border-box;
 }
@@ -83,7 +94,7 @@ button:hover {
 }
 
 .productos-container {
-	max-width: 1400px;
+	max-width: 100%;
 	margin: 40px auto;
 	display: flex;
 	justify-content: space-between;
@@ -93,8 +104,8 @@ button:hover {
 	flex-basis: 30%;
 	padding: 40px;
 	box-sizing: border-box;
-	background:  rgba(175,45,19,1);	
-	color: #edf0f1;
+	background: var(--box-bgcolor);	
+	color: var(--textcolor);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -103,12 +114,13 @@ button:hover {
 	transition: 0.3s ease-in-out;
 	transform: scale(1);
 	cursor: pointer;
+	border-radius: 6px;
 }
 
 .producto:hover {	
-	background: rgb(207, 53, 22);	
+	background: var(--hovercolor);	
 	transform: scale(1.02);	
-	box-shadow: 0px 6px 10px #111;
+	box-shadow: 0px 2px 10px #333;
 }
 
 .producto h3 {
@@ -128,11 +140,13 @@ button:hover {
 }
 
 .info-maquinas-container {
-	background:  rgba(175,45,19,1);	
-	color: #edf0f1;
+	background:var(--box-bgcolor);	
+	color: var(--textcolor);
 	padding: 10px auto;
 	text-align: center;	
 	margin: 80px auto 40px auto;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 
 .info-maquinas-container p {
@@ -143,7 +157,7 @@ button:hover {
 }
 
 footer {
-	background-color: #0e0e0f;
+	background-color: var(--darkcolor);
 	max-width: 100%;
 	margin: 80px auto 0px auto;	
 	box-sizing: border-box;		
@@ -154,7 +168,7 @@ footer {
 	margin: 10px auto 0px auto;	
 	box-sizing: border-box;
 	display: flex;
-	color: #edf0f1;
+	color: var(--textcolor);
 	justify-content: space-between;	
 }
 
@@ -173,7 +187,7 @@ footer {
 }
 
 .sitio h4 {
-	color: rgba(175,45,19,1);
+	color: var(--box-bgcolor);
 	text-transform: uppercase;
 	font-size: 16px;
 }
@@ -194,7 +208,7 @@ footer {
 }
 
 .sitio ul li a:hover {
-	color: #af2d13;
+	color: var(--hovercolor);
 }
 
 .info-empresa {
@@ -206,7 +220,7 @@ footer {
 }
 
 .info-empresa h4 {
-	color: rgba(175,45,19,1);
+	color: var(--box-bgcolor);
 	text-transform: uppercase;
 	font-size: 16px;
 }
@@ -224,7 +238,7 @@ footer {
 
 .fas {
 	font-size: 20px;
-	color: #af2d13;
+	color: var(--box-bgcolor);
 }
 
 .center {

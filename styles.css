@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap');
+
+* {		
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+	background: #24252a;
+	padding: 0px;
+	margin: 0px;
+}
+
+li, a, button {	
+	color: #edf0f1;
+	text-decoration: none;	
+	font-weight: 500;
+	font-size: 16px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;	
+}
+
+.logo {
+	cursor: pointer;
+}
+
+.nav__links {
+	list-style: none;
+}
+
+.nav__links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav__links li a {
+	transition: color .3s ease 0s;	
+}
+
+.nav__links li a:hover {
+	color: #af2d13;
+			
+}
+
+button {
+	padding: 9px 22px;
+	background: rgba(175,45,19,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: .3s ease 0s;
+}
+
+button:hover {
+	background: rgb(207, 53, 22);
+}
+
+.wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.container {
+	max-width: 100%;
+	margin: 40px auto;
+}
+
+.productos-destacados {
+	max-width: 1400px;
+	margin: 40px auto;
+	padding: 5px;	
+	color: #edf0f1;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.productos-destacados h2 {
+	font-weight: 800;
+	font-size: 30px;
+}
+
+.productos-container {
+	max-width: 1400px;
+	margin: 40px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.producto {
+	flex-basis: 30%;
+	padding: 40px;
+	box-sizing: border-box;
+	background:  rgba(175,45,19,1);	
+	color: #edf0f1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	transition: 0.3s ease-in-out;
+	transform: scale(1);
+	cursor: pointer;
+}
+
+.producto:hover {	
+	background: rgb(207, 53, 22);	
+	transform: scale(1.02);	
+	box-shadow: 0px 6px 10px #111;
+}
+
+.producto h3 {
+	font-weight: 500;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.producto p {
+	font-size: 16px;
+	font-weight: 300;	
+}
+
+.producto img {
+	padding-top: 20px;
+	margin-bottom: 10px;
+}
+
+.info-maquinas-container {
+	background:  rgba(175,45,19,1);	
+	color: #edf0f1;
+	padding: 10px auto;
+	text-align: center;	
+	margin: 80px auto 40px auto;
+}
+
+.info-maquinas-container p {
+	max-width: 80%;
+	font-size: 22px;
+	display: inline-block;
+	line-height: 1.5;
+}
+
+footer {
+	background-color: #0e0e0f;
+	max-width: 100%;
+	margin: 80px auto 0px auto;	
+	box-sizing: border-box;		
+}
+
+.columnas-footer {
+	max-width: 80%;
+	margin: 10px auto 0px auto;	
+	box-sizing: border-box;
+	display: flex;
+	color: #edf0f1;
+	justify-content: space-between;	
+}
+
+.columnas-footer img {
+	max-width: 200px;
+	height: 140px;
+	align-self: center;
+}
+
+.sitio {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin: 0;
+}
+
+.sitio h4 {
+	color: rgba(175,45,19,1);
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.sitio ul {
+	list-style: none;
+	padding: 0;	
+	margin: 10px auto 0 auto;
+}
+
+.sitio ul li {
+	padding-bottom: 10px;		
+}
+
+.sitio ul li a {
+	font-size: 14px;
+	transition: color 0.3s ease;
+}
+
+.sitio ul li a:hover {
+	color: #af2d13;
+}
+
+.info-empresa {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin: 0;
+}
+
+.info-empresa h4 {
+	color: rgba(175,45,19,1);
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.flex-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 14px;
+}
+
+.flex-info p {
+	margin-left: 20px;
+}
+
+.fas {
+	font-size: 20px;
+	color: #af2d13;
+}
+
+.center {
+	text-align: center;
+	color: #575858;
+	background: #0d0d0f;
+	margin-top: 20px;
+	padding: 5px;
+	font-size: 12px;	
+}
